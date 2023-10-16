@@ -11,7 +11,7 @@ const [editedTodo,setEditedTodo] = useState("")
 
  const handleSubmit = (e) =>{
       e.preventDefault();
-      
+
       setTodos([{id:`${todo}-${Date.now()}`, todo}, ...todos])
       setTodo("")
 
@@ -41,6 +41,7 @@ const handleEditedTodo = (e) => {
   return (
     <div className='App'>
       <div className='container'>
+        <h1>Todo list App</h1>
       <Todoform
       todo={todo}
       editId={editId}

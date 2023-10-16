@@ -11,7 +11,7 @@ const Todoform = ({handleSubmit,todo,setTodo,editId}) => {
 <button
 type='submit'
 >
-    {editId ? "Edit" : "Go"}
+    {editId ? "Edit" : "ADD"}
     </button>      
     </form>
   )
